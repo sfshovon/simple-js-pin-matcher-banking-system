@@ -10,57 +10,53 @@
     <script src="https://kit.fontawesome.com/4951b7ad3b.js" crossorigin="anonymous"></script>
     <!-- Font Awesome CDN -->
 </head>
-<body>
+  <body>
     <h1 class="header-text">Enter The Pin To Access The Bank Account</h1>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="input-section half-width left-side">
-                    <input id="typed-numbers" class="form-control" type="text">
-                    
-                    <div class="numbers">
-                        <div id="key-pad" class="calc-body">
-                            <div class="calc-button-row">
-                              <div class="button">7</div>
-                              <div class="button">8</div>
-                              <div class="button">9</div>
-                            </div>
-                            <div class="calc-button-row">
-                              <div class="button">4</div>
-                              <div class="button">5</div>
-                              <div class="button">6</div>
-                            </div>
-                            <div class="calc-button-row">
-                              <div class="button">1</div>
-                              <div class="button">2</div>
-                              <div class="button">3</div>
-                            </div>
-                            <div class="calc-button-row">
-                                <div class="button">&lt;</div>
-                                <div class="button">0</div>
-                                <div class="button">C</div>
-                            </div>
-                            <div>
-                                <button onclick="verifyPin()" type="submit" class="submit-btn">Unlock</button>
-                            </div>
-                        </div>
-                    </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="input-section half-width left-side">
+            <input id="typed-numbers" class="form-control" type="text">
+              <div class="numbers">
+                <div id="key-pad" class="calc-body">
+                  <div class="calc-button-row">
+                    <div class="button">7</div>
+                    <div class="button">8</div>
+                    <div class="button">9</div>
+                  </div>
+                  <div class="calc-button-row">
+                    <div class="button">4</div>
+                    <div class="button">5</div>
+                    <div class="button">6</div>
+                  </div>
+                  <div class="calc-button-row">
+                    <div class="button">1</div>
+                    <div class="button">2</div>
+                    <div class="button">3</div>
+                  </div>
+                  <div class="calc-button-row">
+                    <div class="button">&lt;</div>
+                    <div class="button">0</div>
+                    <div class="button">C</div>
+                  </div>
+                <div>
+                  <button onclick="verifyPin()" type="submit" class="submit-btn">Unlock</button>
                 </div>
+              </div>
             </div>
-
-            <div class="col-md-6 right-side">
-                <div class="pin-generator half-width">
-                    <input id="display-pin" class="form-control" type="text">
-                    <button onclick="generatePin()" class="generate-btn">Generate Pin</button>
-                </div>
-            </div>
-
-        <div class="notify-section">
-            <p id="pin-unmatched" class="notify"><i class="fa-sharp fa-solid fa-xmark"></i> Wrong Pin, Please try again</p>
-            <p id="pin-matched" class="notify"><i class="fa-regular fa-square-check"></i> Pin Matched. Welcome!</p>
+          </div>
         </div>
+        <div class="col-md-6 right-side">
+          <div class="pin-generator half-width">
+            <input id="display-pin" class="form-control" type="text">
+            <button onclick="generatePin()" class="generate-btn">Generate Pin</button>
+          </div>
+        </div>
+      <div class="notify-section">
+        <p id="pin-unmatched" class="notify"><i class="fa-sharp fa-solid fa-xmark"></i> Wrong Pin, Please try again</p>
+        <p id="pin-matched" class="notify"><i class="fa-regular fa-square-check"></i> Pin Matched. Welcome!</p>
+      </div>
     </div>
-
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
